@@ -3,32 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="مؤسسة عبدالله صالح للنجارة بالرياض. نقدم أرقى خدمات النجارة، تفصيل الخزائن، غرف النوم، والديكورات الخشبية بلمسات فنية إبداعية تحول مساحاتك إلى تحف فنية.">
-    <meta name="keywords" content="نجار, تفصيل خزائن, غرف نوم, ديكورات خشبية, موبيليا, الرياض, مؤسسة عبدالله صالح للنجارة, صيانة نجارة">
+    <meta name="description" content="مؤسسة عبدالله صالح عبدالله بن عمير للتصميم بالرياض. متخصصون في أحدث تصميمات وتركيبات الألمنيوم والزجاج، واجهات استراكشر، أبواب ونوافذ، وكبائن الشاور بجودة عالية.">
+    <meta name="keywords" content="ألمنيوم, زجاج, واجهات استراكشر, أبواب ألمنيوم, نوافذ زجاج, كبائن شاور, الرياض, مؤسسة عبدالله صالح عبدالله بن عمير للتصميم">
     
-    <meta property="og:title" content="مؤسسة عبدالله صالح للنجارة | تفصيل ديكورات وموبيليا">
-    <meta property="og:description" content="أرقى خدمات النجارة وتفصيل الخزائن وغرف النوم بلمسات فنية إبداعية في الرياض.">
-    <meta property="og:image" content="https://images.unsplash.com/photo-1611078546123-271d5b0606a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80">
+    <meta name="google-site-verification" content="MwiJDhnpV5nhNaletUm3h81AmbcMi0IbAXhVRvN-E9k" />
+
+    <meta property="og:title" content="مؤسسة عبدالله صالح بن عمير للتصميم | ألمنيوم وزجاج">
+    <meta property="og:description" content="خبراء تصميم وتركيب أعمال الألمنيوم والزجاج وواجهات الفلل في الرياض.">
+    <meta property="og:image" content="https://cdn-icons-png.flaticon.com/512/3014/3014389.png">
     <meta property="og:type" content="website">
     
-    <title>مؤسسة عبدالله صالح للنجارة | تفصيل ديكورات خشبية وموبيليا</title>
+    <title>مؤسسة عبدالله صالح عبدالله بن عمير للتصميم | ألمنيوم وزجاج</title>
     
-    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/2855/2855160.png" type="image/png">
-    <link rel="apple-touch-icon" href="https://cdn-icons-png.flaticon.com/512/2855/2855160.png">
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/3014/3014389.png" type="image/png">
+    <link rel="apple-touch-icon" href="https://cdn-icons-png.flaticon.com/512/3014/3014389.png">
 
     <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
     <style>
-        /* المتغيرات والألوان (ألوان الخشب الفاخرة) */
+        /* ================= المتغيرات والألوان (ثيم الألمنيوم والزجاج) ================= */
         :root {
-            --bg-color: #1a110a; 
-            --surface-color: #2b1d14; 
-            --gold-primary: #d28b4b; 
-            --gold-light: #e8bd9b; 
-            --text-light: #f4ece6; 
-            --text-muted: #b8a598; 
-            --silver: #a07855; 
+            --bg-color: #0b131e; /* كحلي داكن جداً يميل للأسود */
+            --surface-color: #152233; /* كحلي معدني للبطاقات */
+            --primary-accent: #3498db; /* أزرق زجاجي ساطع */
+            --silver-light: #e0e6ed; /* فضي لامع للنصوص البارزة */
+            --text-light: #f4f6f9; /* أبيض ثلجي */
+            --text-muted: #9ba4b5; /* رمادي معدني */
+            --metal-dark: #2c3e50;
+            --glass-border: rgba(52, 152, 219, 0.3);
         }
 
         /* الإعدادات العامة والخطوط */
@@ -40,17 +43,11 @@
             scroll-behavior: smooth;
         }
 
-        /* منع التمرير الأفقي وضبط العرض */
-        html, body {
-            width: 100%;
-            overflow-x: hidden;
-        }
+        html, body { width: 100%; overflow-x: hidden; }
 
         body {
-            background-color: var(--bg-color);
-            color: var(--text-light);
-            line-height: 1.6;
-            padding-bottom: 90px;
+            background-color: var(--bg-color); color: var(--text-light);
+            line-height: 1.6; padding-bottom: 90px;
         }
 
         body.no-scroll { overflow: hidden; }
@@ -61,7 +58,7 @@
         html[lang="en"] { direction: ltr; }
         /* ======================================================= */
 
-        /* شاشة التحميل (Loader) بتصميم النجارة */
+        /* شاشة التحميل (Loader) بتصميم معدني زجاجي */
         #loader {
             position: fixed; top: 0; left: 0; width: 100%; height: 100%;
             background-color: var(--bg-color); z-index: 99999;
@@ -71,147 +68,213 @@
         #loader.hidden { opacity: 0; visibility: hidden; }
         .loader-content { text-align: center; display: flex; flex-direction: column; align-items: center; }
         
-        .wood-loader-frame {
-            width: 130px;
-            height: 130px;
-            border: 6px solid var(--gold-primary);
-            border-radius: 50%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background: radial-gradient(circle, var(--surface-color) 0%, var(--bg-color) 100%);
-            box-shadow: 0 0 25px rgba(210, 139, 75, 0.3), inset 0 0 15px rgba(210, 139, 75, 0.2);
-            margin-bottom: 25px;
-            position: relative;
+        .metal-loader-frame {
+            width: 140px; height: 140px; border-radius: 50%;
+            background: rgba(21, 34, 51, 0.8); backdrop-filter: blur(10px);
+            border: 3px solid transparent;
+            border-top-color: var(--primary-accent); border-bottom-color: var(--silver-light);
+            box-shadow: 0 0 30px rgba(52, 152, 219, 0.2), inset 0 0 15px rgba(224, 230, 237, 0.1);
+            display: flex; justify-content: center; align-items: center;
+            margin-bottom: 25px; position: relative;
+            animation: spinFrame 2s linear infinite;
         }
         
-        .wood-loader-frame i {
-            font-size: 3.5rem;
-            color: var(--gold-primary);
-            transform-origin: bottom right;
-            animation: hammerStrike 1.2s infinite ease-in-out;
-            filter: drop-shadow(2px 4px 6px rgba(0,0,0,0.5));
+        .metal-loader-frame i {
+            font-size: 3.5rem; color: var(--silver-light);
+            animation: counterSpinPulse 2s linear infinite;
+            filter: drop-shadow(0 0 10px rgba(52, 152, 219, 0.6));
         }
 
-        @keyframes hammerStrike {
+        @keyframes spinFrame {
             0% { transform: rotate(0deg); }
-            30% { transform: rotate(-50deg); }
-            40% { transform: rotate(15deg); } 
-            50% { transform: rotate(-10deg); }
-            60% { transform: rotate(0deg); }  
-            100% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        @keyframes counterSpinPulse {
+            0% { transform: rotate(0deg) scale(0.95); }
+            50% { transform: rotate(-180deg) scale(1.1); }
+            100% { transform: rotate(-360deg) scale(0.95); }
         }
 
-        .loading-text { color: var(--gold-light); font-size: 1.1rem; font-weight: 500; margin-top: 10px; }
+        .loading-text { color: var(--silver-light); font-size: 1.1rem; font-weight: 500; margin-top: 10px; letter-spacing: 1px; }
         .dots::after { content: ''; animation: dotsLoader 1.5s steps(4, end) infinite; }
         @keyframes dotsLoader { 0%, 20% { content: ''; } 40% { content: '.'; } 60% { content: '..'; } 80%, 100% { content: '...'; } }
         .loader-footer { position: absolute; bottom: 40px; width: 100%; text-align: center; padding: 0 15px; }
 
         /* الرأس (Header) */
         header {
-            background-color: rgba(43, 29, 20, 0.95); padding: 15px 5%;
+            background-color: rgba(11, 19, 30, 0.95); padding: 15px 5%;
             position: fixed; width: 100%; top: 0; z-index: 1000;
             display: flex; justify-content: space-between; align-items: center;
-            border-bottom: 1px solid rgba(210, 139, 75, 0.3); backdrop-filter: blur(10px);
+            border-bottom: 1px solid var(--glass-border); backdrop-filter: blur(12px);
         }
         .header-right { display: flex; align-items: center; gap: 15px; }
-        .site-title { color: var(--gold-primary); font-size: 1.1rem; font-weight: 700; white-space: nowrap; }
-        .menu-btn { color: var(--gold-primary); font-size: 1.5rem; cursor: pointer; background: none; border: none; transition: 0.3s; }
-        .menu-btn:hover { transform: scale(1.1); }
+        .site-title { color: var(--silver-light); font-size: 0.95rem; font-weight: 800; white-space: nowrap; text-shadow: 0 0 5px rgba(52, 152, 219, 0.5); }
+        .menu-btn { color: var(--primary-accent); font-size: 1.5rem; cursor: pointer; background: none; border: none; transition: 0.3s; }
+        .menu-btn:hover { transform: scale(1.1); color: var(--silver-light); }
         .lang-btn {
-            background: transparent; border: 1px solid var(--gold-primary); color: var(--gold-primary);
-            padding: 3px 8px; border-radius: 5px; cursor: pointer; font-weight: bold; font-size: 0.85rem; transition: 0.3s; font-family: sans-serif;
+            background: transparent; border: 1px solid var(--primary-accent); color: var(--primary-accent);
+            padding: 3px 8px; border-radius: 5px; cursor: pointer; font-weight: bold; font-size: 0.85rem; transition: 0.3s;
         }
-        .lang-btn:hover { background: var(--gold-primary); color: var(--bg-color); }
+        .lang-btn:hover { background: var(--primary-accent); color: var(--bg-color); }
 
         /* القائمة الجانبية */
         .side-menu {
             position: fixed; top: 60px; width: 250px; height: calc(100vh - 60px);
-            background-color: var(--surface-color); transition: 0.4s; z-index: 999; padding-top: 20px;
-            right: -100%; border-left: 1px solid var(--gold-primary);
+            background-color: rgba(21, 34, 51, 0.98); backdrop-filter: blur(20px); transition: 0.4s; z-index: 999; padding-top: 20px;
+            right: -100%; border-left: 2px solid var(--primary-accent);
         }
         html[lang="ar"] .side-menu.active { right: 0; }
-        html[lang="en"] .side-menu { left: -100%; right: auto; border-right: 1px solid var(--gold-primary); border-left: none; }
+        html[lang="en"] .side-menu { left: -100%; right: auto; border-right: 2px solid var(--primary-accent); border-left: none; }
         html[lang="en"] .side-menu.active { left: 0; }
         .side-menu a {
             display: block; padding: 15px 20px; color: var(--text-light); text-decoration: none;
             font-size: 1.1rem; border-bottom: 1px solid rgba(255,255,255,0.05); transition: 0.3s;
         }
-        html[lang="ar"] .side-menu a:hover { color: var(--gold-primary); padding-right: 30px; }
-        html[lang="en"] .side-menu a:hover { color: var(--gold-primary); padding-left: 30px; }
+        html[lang="ar"] .side-menu a:hover { color: var(--primary-accent); padding-right: 30px; background: rgba(52, 152, 219, 0.1); }
+        html[lang="en"] .side-menu a:hover { color: var(--primary-accent); padding-left: 30px; background: rgba(52, 152, 219, 0.1); }
 
         /* الأقسام العامة */
         section { padding: 100px 5% 50px; }
-        .section-title { text-align: center; color: var(--gold-primary); font-size: 2.2rem; margin-bottom: 40px; position: relative; }
-        .section-title::after { content: ''; display: block; width: 80px; height: 3px; background: var(--gold-primary); margin: 10px auto; border-radius: 2px; }
+        .section-title { text-align: center; color: var(--silver-light); font-size: 2.2rem; margin-bottom: 40px; position: relative; font-weight: 800; }
+        .section-title::after { content: ''; display: block; width: 80px; height: 3px; background: var(--primary-accent); margin: 15px auto; border-radius: 2px; box-shadow: 0 0 10px var(--primary-accent); }
+
+        .reveal { opacity: 0; transform: translateY(40px); transition: all 0.8s cubic-bezier(0.5, 0, 0, 1); }
+        .reveal.active { opacity: 1; transform: translateY(0); }
 
         /* الرئيسية */
         .hero {
-            text-align: center; padding-top: 120px; min-height: 80vh; display: flex; flex-direction: column;
-            justify-content: center; align-items: center; background: radial-gradient(circle at center, #352317 0%, #1a110a 100%);
+            text-align: center; padding-top: 130px; min-height: 80vh; display: flex; flex-direction: column;
+            justify-content: center; align-items: center; 
+            background: radial-gradient(ellipse at top, #1c2e4a 0%, var(--bg-color) 70%);
         }
         .hero h1 {
-            color: var(--gold-primary); font-size: clamp(1.6rem, 4vw, 2.5rem); max-width: 900px;
-            line-height: 1.5; margin-bottom: 20px; text-shadow: 0 2px 10px rgba(210, 139, 75, 0.3); padding: 0 10px;
+            color: var(--silver-light); font-size: clamp(1.4rem, 4vw, 2.2rem); max-width: 900px;
+            line-height: 1.5; margin-bottom: 20px; text-shadow: 0 2px 15px rgba(52, 152, 219, 0.4); padding: 0 10px; font-weight: 800;
         }
+        .hero h1 span { color: var(--primary-accent); }
         .hero p { max-width: 800px; font-size: 1.05rem; color: var(--text-muted); line-height: 1.8; margin-bottom: 30px; padding: 0 15px; }
 
         /* من نحن والخدمات والمزايا */
         .about-text {
             background-color: var(--surface-color); padding: 40px; border-radius: 15px;
-            border: 1px solid rgba(210, 139, 75, 0.2); text-align: center; font-size: 1.1rem; line-height: 1.9;
+            border: 1px solid var(--glass-border); text-align: center; font-size: 1.1rem; line-height: 1.9;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
         }
         .grid-container { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; }
+        
         .service-card {
-            background-color: var(--surface-color); border: 1px solid rgba(210, 139, 75, 0.4);
-            border-radius: 15px; padding: 30px 20px; text-align: center; transition: 0.3s; cursor: pointer;
+            background-color: var(--surface-color); border: 1px solid rgba(255,255,255,0.05);
+            border-radius: 15px; padding: 30px 20px; text-align: center; transition: 0.4s; cursor: pointer;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3); position: relative; overflow: hidden;
         }
-        .service-card:hover { transform: translateY(-8px); box-shadow: 0 10px 25px rgba(210, 139, 75, 0.15); border-color: var(--gold-primary); }
-        .service-card i { font-size: 2.5rem; color: var(--gold-primary); margin-bottom: 20px; }
-        .service-card h3 { color: var(--gold-light); margin-bottom: 15px; font-size: 1.3rem; }
-        .service-card p { color: var(--text-muted); font-size: 0.95rem; line-height: 1.7; }
+        .service-card::before {
+            content: ''; position: absolute; top: 0; left: -100%; width: 50%; height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.05), transparent);
+            transform: skewX(-20deg); transition: 0.5s;
+        }
+        .service-card:hover::before { left: 150%; }
+        .service-card:hover { transform: translateY(-10px); box-shadow: 0 15px 30px rgba(52, 152, 219, 0.15); border-color: var(--primary-accent); background: #1a2a40; }
+        
+        .icon-3d-wrapper {
+            width: 70px; height: 70px; margin: 0 auto 20px; border-radius: 50%;
+            background: linear-gradient(145deg, #1e3047, #131e2e);
+            box-shadow: 5px 5px 10px #0a111a, -5px -5px 10px #20334c;
+            border: 1px solid rgba(224, 230, 237, 0.1);
+            display: flex; justify-content: center; align-items: center; transition: 0.3s;
+        }
+        .icon-3d-wrapper i { font-size: 2.2rem; color: var(--primary-accent); transition: 0.3s; }
+        .service-card:hover .icon-3d-wrapper { border-color: var(--primary-accent); box-shadow: inset 5px 5px 10px #0a111a, inset -5px -5px 10px #20334c; }
+        .service-card:hover .icon-3d-wrapper i { color: var(--silver-light); text-shadow: 0 0 10px var(--primary-accent); }
+        
+        .service-card h3 { color: var(--silver-light); margin-bottom: 15px; font-size: 1.3rem; font-weight: 700; }
+        .service-card p { color: var(--text-muted); font-size: 0.95rem; line-height: 1.7; text-align: justify; text-align-last: center; }
 
-        .feature-card { text-align: center; padding: 20px; }
-        .feature-card i { font-size: 2.2rem; color: var(--gold-primary); margin-bottom: 15px; background: rgba(210, 139, 75, 0.1); width: 70px; height: 70px; line-height: 70px; border-radius: 50%; display: inline-block; }
-        .feature-card h3 { margin-bottom: 10px; color: var(--text-light); font-size: 1.2rem; }
+        .feature-card { text-align: center; padding: 25px 20px; background: rgba(21, 34, 51, 0.5); border-radius: 15px; border: 1px dashed var(--metal-dark); transition: 0.3s; }
+        .feature-card:hover { border-style: solid; border-color: var(--primary-accent); transform: translateY(-5px); }
+        .feature-card .icon-3d-wrapper { width: 80px; height: 80px; margin-bottom: 15px; background: none; box-shadow: none; border: 2px solid var(--primary-accent); }
+        .feature-card .icon-3d-wrapper i { font-size: 2.5rem; color: var(--silver-light); }
+        .feature-card h3 { margin-bottom: 10px; color: var(--silver-light); font-size: 1.2rem; }
         .feature-card p { color: var(--text-muted); font-size: 0.95rem; }
 
-        /* تواصل معنا والخريطة */
+        /* ================= تواصل معنا والخريطة (تضاريس واحترافية) ================= */
         .contact-info { text-align: center; margin-bottom: 40px; padding: 0 10px; }
-        .contact-info p { font-size: 1rem; margin-bottom: 15px; word-wrap: break-word; }
-        html[lang="ar"] .contact-info i { margin-left: 10px; color: var(--gold-primary); }
-        html[lang="en"] .contact-info i { margin-right: 10px; color: var(--gold-primary); }
+        .contact-info p { font-size: 0.95rem; margin-bottom: 10px; word-wrap: break-word; color: var(--silver-light); }
+        html[lang="ar"] .contact-info i { margin-left: 10px; color: var(--primary-accent); }
+        html[lang="en"] .contact-info i { margin-right: 10px; color: var(--primary-accent); }
+        .contact-info a { color: var(--primary-accent); transition: 0.3s; }
+        .contact-info a:hover { color: var(--silver-light); text-shadow: 0 0 8px var(--primary-accent); }
         
-        .map-container { position: relative; border-radius: 15px; overflow: hidden; border: 2px solid var(--gold-primary); height: 400px; width: 100%; }
-        .map-container iframe { width: 100% !important; height: 100% !important; border: none; }
+        .map-container { 
+            position: relative; border-radius: 20px; overflow: hidden; 
+            border: 2px solid var(--metal-dark); height: 450px; width: 100%; 
+            box-shadow: 0 15px 35px rgba(0,0,0,0.6);
+        }
         
-        .map-overlay-wrapper { position: absolute; bottom: 15px; display: flex; flex-direction: column; align-items: center; pointer-events: none; }
-        html[lang="ar"] .map-overlay-wrapper { left: 15px; }
-        html[lang="en"] .map-overlay-wrapper { right: 15px; }
-        .map-pin-icon { color: var(--gold-primary); font-size: 2.2rem; margin-bottom: 5px; animation: bouncePin 1s infinite alternate; filter: drop-shadow(0 3px 6px rgba(0,0,0,0.7)); }
-        @keyframes bouncePin { 0% { transform: translateY(0); } 100% { transform: translateY(-12px); } }
-        .map-overlay { background: rgba(26, 17, 10, 0.9); color: var(--gold-primary); padding: 5px 12px; border-radius: 20px; font-weight: bold; border: 1px solid var(--gold-primary); font-size: 0.75rem; white-space: nowrap; }
+        /* فلتر CSS لتحويل الخريطة إلى شكل تضاريس متناسق مع الثيم الداكن */
+        .map-container iframe { 
+            width: 100% !important; height: 100% !important; border: none; 
+            filter: contrast(1.1) saturate(1.2) hue-rotate(180deg) invert(1); 
+        }
+        
+        /* الدبوس والأنيميشن الخاص به */
+        .map-pin-center { 
+            position: absolute; top: 50%; left: 50%; 
+            transform: translate(-50%, -50%); 
+            pointer-events: none; z-index: 10; 
+            display: flex; flex-direction: column; align-items: center; 
+        }
+        .map-pin-icon { 
+            color: #e74c3c; font-size: 3.5rem; margin-bottom: 5px; 
+            animation: bouncePin 1.5s infinite cubic-bezier(0.28, 0.84, 0.42, 1); 
+            filter: drop-shadow(0 5px 8px rgba(0,0,0,0.9)); 
+        }
+        @keyframes bouncePin { 
+            0% { transform: translateY(0); } 
+            50% { transform: translateY(-15px); } 
+            100% { transform: translateY(0); } 
+        }
+        
+        /* المربع التعريفي بجوار الدبوس (Tooltip) */
+        .map-tooltip {
+            background: rgba(11, 19, 30, 0.95); backdrop-filter: blur(8px);
+            color: var(--silver-light); padding: 8px 18px; border-radius: 8px; font-weight: bold; 
+            border: 1px solid var(--primary-accent); font-size: 0.85rem; white-space: nowrap;
+            box-shadow: 0 4px 15px rgba(52, 152, 219, 0.3); 
+            animation: pulseTooltip 2s infinite;
+            position: relative; margin-bottom: 10px;
+        }
+        /* السهم الصغير للمربع التعريفي */
+        .map-tooltip::after {
+            content: ''; position: absolute; bottom: -6px; left: 50%; transform: translateX(-50%);
+            border-width: 6px 6px 0 6px; border-style: solid;
+            border-color: var(--primary-accent) transparent transparent transparent;
+        }
+
+        @keyframes pulseTooltip {
+            0% { box-shadow: 0 0 0 0 rgba(52, 152, 219, 0.4); }
+            70% { box-shadow: 0 0 0 10px rgba(52, 152, 219, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(52, 152, 219, 0); }
+        }
 
         /* ================= البار السفلي ================= */
         .bottom-nav {
             position: fixed; bottom: 12px; left: 50%; transform: translateX(-50%);
-            background-color: rgba(43, 29, 20, 0.95); border: 1px solid var(--gold-primary);
+            background-color: rgba(11, 19, 30, 0.95); border: 1px solid var(--metal-dark);
             border-radius: 35px; display: flex; justify-content: space-around; align-items: center;
-            padding: 5px 10px;
-            width: 90%; max-width: 450px; z-index: 1000; backdrop-filter: blur(10px);
+            padding: 5px 10px; width: 90%; max-width: 450px; z-index: 1000; backdrop-filter: blur(10px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.8);
         }
         .bottom-nav a {
-            color: var(--gold-primary); text-decoration: none; font-size: 1.1rem;
-            padding: 5px; border-radius: 12px; transition: 0.3s;
-            display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 3px;
-            flex: 1; text-align: center;
+            color: var(--text-muted); text-decoration: none; font-size: 1.1rem;
+            padding: 6px; border-radius: 12px; transition: 0.3s;
+            display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 3px; flex: 1; text-align: center;
         }
         .bottom-nav a:hover, .bottom-nav a:active {
-            background-color: var(--gold-primary); color: var(--bg-color); transform: translateY(-3px);
+            background-color: rgba(52, 152, 219, 0.1); color: var(--primary-accent); transform: translateY(-3px);
         }
         .nav-text { font-size: 0.65rem; font-weight: 700; }
 
-        /* ================= الأزرار العائمة (واتساب + اتصال) ================= */
+        /* ================= الأزرار العائمة ================= */
         .floating-action-menu {
             position: fixed;
             bottom: 95px;
@@ -224,51 +287,46 @@
         html[lang="en"] .floating-action-menu { right: 15px; }
 
         .float-btn {
-            width: 45px; height: 45px;
+            width: 48px; height: 48px;
             border-radius: 50%;
             display: flex; justify-content: center; align-items: center;
-            font-size: 1.3rem;
+            font-size: 1.4rem;
             text-decoration: none; color: white;
             border: 2px solid white; transition: transform 0.3s;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.5);
         }
-        .float-btn:hover { transform: scale(1.1); }
+        .float-btn:hover { transform: scale(1.15) rotate(5deg); }
         
-        .call-btn {
-            background-color: var(--gold-primary);
-            animation: pulseCall 2s infinite;
-            animation-delay: 1s;
-        }
-        .wa-btn {
-            background-color: #25d366;
-            animation: pulseWA 2s infinite;
-        }
+        .call-btn { background-color: var(--primary-accent); animation: pulseCall 2s infinite; animation-delay: 1s; border: none; }
+        .wa-btn { background-color: #25d366; animation: pulseWA 2s infinite; border: none; }
 
-        @keyframes pulseWA { 0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7); } 70% { box-shadow: 0 0 0 10px rgba(37, 211, 102, 0); } 100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); } }
-        @keyframes pulseCall { 0% { box-shadow: 0 0 0 0 rgba(210, 139, 75, 0.7); } 70% { box-shadow: 0 0 0 10px rgba(210, 139, 75, 0); } 100% { box-shadow: 0 0 0 0 rgba(210, 139, 75, 0); } }
+        @keyframes pulseWA { 0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.6); } 70% { box-shadow: 0 0 0 12px rgba(37, 211, 102, 0); } 100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); } }
+        @keyframes pulseCall { 0% { box-shadow: 0 0 0 0 rgba(52, 152, 219, 0.6); } 70% { box-shadow: 0 0 0 12px rgba(52, 152, 219, 0); } 100% { box-shadow: 0 0 0 0 rgba(52, 152, 219, 0); } }
 
         /* التذييل */
-        footer { text-align: center; padding: 40px 15px 100px; background-color: #120b06; border-top: 1px solid rgba(210, 139, 75, 0.2); overflow: hidden; }
+        footer { text-align: center; padding: 40px 15px 100px; background-color: #060a10; border-top: 1px solid var(--metal-dark); }
         .copyright { color: var(--text-muted); font-size: 0.75rem; margin-bottom: 15px; display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 8px; }
-        .designer-badge, .designer-badge-loader { display: inline-flex; align-items: center; justify-content: center; border: 1.5px solid var(--silver); padding: 6px 15px; border-radius: 30px; text-decoration: none; background: linear-gradient(145deg, #2b1d14, #3a271c); transition: 0.3s; text-align: center; max-width: 100%; }
-        .designer-badge span, .designer-badge-loader span { color: var(--silver); font-weight: bold; font-size: 0.7rem; text-shadow: 0 0 5px rgba(0, 0, 0, 0.5); white-space: normal; }
-        .designer-badge:hover { background: var(--silver); transform: scale(1.05); }
-        .designer-badge:hover span { color: #fff; text-shadow: none; }
+        .designer-badge, .designer-badge-loader { display: inline-flex; align-items: center; justify-content: center; border: 1px solid var(--metal-dark); padding: 8px 18px; border-radius: 30px; text-decoration: none; background: rgba(21, 34, 51, 0.5); transition: 0.3s; text-align: center; max-width: 100%; box-shadow: 0 4px 10px rgba(0,0,0,0.3); }
+        .designer-badge span, .designer-badge-loader span { color: var(--silver-light); font-weight: bold; font-size: 0.75rem; text-shadow: 0 0 5px rgba(0, 0, 0, 0.8); white-space: normal; transition: 0.3s; }
+        .designer-badge:hover { background: var(--primary-accent); border-color: var(--primary-accent); transform: translateY(-3px); }
+        .designer-badge:hover span { color: #fff; }
 
-        /* ================= تعديلات التجاوب (Mobile & Tablets) ================= */
+        /* ================= التجاوب للشاشات الصغيرة ================= */
         @media (max-width: 768px) {
             section { padding: 80px 5% 40px; }
             .section-title { font-size: 1.8rem; margin-bottom: 30px; }
-            .hero { padding-top: 100px; min-height: 70vh; }
-            .hero h1 { font-size: 1.5rem; }
+            .hero { padding-top: 110px; min-height: 70vh; }
+            .hero h1 { font-size: 1.3rem; }
             .hero p { font-size: 0.95rem; }
             .about-text { padding: 25px 15px; font-size: 1rem; line-height: 1.7; }
             .grid-container { grid-template-columns: 1fr; gap: 20px; }
             .service-card { padding: 25px 15px; }
-            .map-container { height: 300px; }
+            .map-container { height: 350px; }
             .bottom-nav { width: 95%; bottom: 10px; }
             .floating-action-menu { bottom: 85px; }
-            .float-btn { width: 40px; height: 40px; font-size: 1.2rem; }
-            .header-right .site-title { font-size: 1rem; }
+            .float-btn { width: 42px; height: 42px; font-size: 1.2rem; }
+            header .site-title { font-size: 0.80rem; white-space: normal; text-align: right; line-height: 1.3; }
+            .map-tooltip { font-size: 0.75rem; white-space: normal; text-align: center; padding: 6px 10px; }
         }
     </style>
 </head>
@@ -276,8 +334,8 @@
 
     <div id="loader">
         <div class="loader-content">
-            <div class="wood-loader-frame">
-                <i class="fas fa-hammer"></i>
+            <div class="metal-loader-frame">
+                <i class="fas fa-tools"></i>
             </div>
             <p class="loading-text">
                 <span class="ar">جاري تجهيز الموقع</span><span class="en">Loading Website</span><span class="dots"></span>
@@ -295,8 +353,8 @@
         <div class="header-right">
             <button class="menu-btn" onclick="toggleMenu()" aria-label="Menu"><i class="fas fa-bars"></i></button>
             <div class="site-title">
-                <span class="ar">مؤسسة عبدالله صالح للنجارة</span>
-                <span class="en">Abdullah Saleh Carpentry</span>
+                <span class="ar">مؤسسة عبدالله صالح بن عمير للتصميم</span>
+                <span class="en">Abdullah Saleh Design</span>
             </div>
         </div>
         <button id="langToggleBtn" class="lang-btn">EN</button>
@@ -310,118 +368,105 @@
         <a href="#contact" onclick="toggleMenu()"><span class="ar">تواصل معنا</span><span class="en">Contact</span></a>
     </div>
 
-    <section id="hero" class="hero">
+    <section id="hero" class="hero reveal">
         <h1>
-            <span class="ar">افضل مؤسسة لتفصيل الموبيليا والديكورات الخشبية في الرياض</span>
-            <span class="en">Best Foundation for Custom Furniture & Wooden Decors in Riyadh</span>
+            <span class="ar">مؤسسة عبدالله صالح عبدالله بن عمير للتصميم <span>للألمنيوم والزجاج</span></span>
+            <span class="en">Abdullah Saleh Bin Umair Design for <span>Aluminum & Glass</span></span>
         </h1>
         <p>
-            <span class="ar">هل تبحث عن الفخامة والجودة في أعمال النجارة لمنزلك؟ نقدم لك في مؤسسة عبدالله صالح أرقى خدمات تفصيل الخزائن، غرف النوم، والديكورات الجدارية بلمسات فنية إبداعية تحول مساحاتك إلى تحف فنية. نتميز بالدقة المتناهية والاحترافية العالية في تنفيذ كافة أعمال الديكور الخشبي المودرن والكلاسيك. نعتمد على أفضل أنواع الأخشاب لضمان جودة تدوم طويلاً مع أسعار تنافسية. اجعل منزلك يعكس ذوقك الرفيع، تواصل معنا اليوم لتحقيق رؤيتك الفخمة.</span>
-            <span class="en">Looking for luxury and quality in woodwork for your home? Abdullah Saleh Foundation offers the finest custom cabinets, bedrooms, and wall decors with creative touches that turn your spaces into masterpieces. We excel in precision and professionalism, using the best types of wood to ensure long-lasting quality with competitive prices. Contact us today to bring your luxurious vision to life.</span>
+            <span class="ar">الوجهة الأولى للرقي والفخامة في الرياض. نقدم أرقى خدمات تصميم وتنفيذ واجهات الاستراكشر، كبائن الشاور، النوافذ والأبواب الألمنيوم، والمطابخ العصرية بلمسات فنية وإبداعية. نعتمد على أفضل الخامات الزجاجية والمعدنية لنمنح مساحتك عزلاً مثالياً، أماناً تاماً، وإطلالة تخطف الأنظار. تواصل معنا لتنفيذ مشاريعك السكنية والتجارية باحترافية.</span>
+            <span class="en">The first destination for luxury in Riyadh. We offer the finest design and execution of structural facades, shower cabins, aluminum windows and doors, and modern kitchens. We use the best glass and metal materials to provide perfect insulation, total safety, and an eye-catching view.</span>
         </p>
     </section>
 
     <section id="about">
-        <h2 class="section-title"><span class="ar">من نحن</span><span class="en">About Us</span></h2>
-        <div class="about-text">
-            <span class="ar"><strong>مؤسسة عبدالله صالح للنجارة،</strong> خبيرك الأول في عالم النجارة والديكورات الخشبية الراقية بالرياض. نمتلك سنوات من الخبرة الواسعة في تقديم حلول خشبية متكاملة تلبي كافة تطلعات عملائنا الكرام. نجمع بين المهارة الحرفية العالية والفهم العميق لأحدث اتجاهات التصميم الداخلي، لنقدم لك نتائج مبهرة تتجاوز توقعاتك بجودة لا تضاهى ومتانة تعيش لأجيال.</span>
-            <span class="en"><strong>Abdullah Saleh Carpentry Foundation,</strong> your premier expert in luxury woodwork and carpentry in Riyadh. We have years of extensive experience providing comprehensive wooden solutions that meet all our clients' aspirations. We combine high craftsmanship with a deep understanding of the latest interior design trends to deliver stunning, durable results.</span>
+        <h2 class="section-title reveal"><span class="ar">من نحن</span><span class="en">About Us</span></h2>
+        <div class="about-text reveal">
+            <span class="ar"><strong>مؤسسة عبدالله صالح عبدالله بن عمير للتصميم،</strong> خبيرك الموثوق في عالم الألمنيوم والزجاج بالرياض. نمتلك سنوات من الخبرة الواسعة في تقديم حلول هندسية متكاملة للواجهات والتشطيبات الداخلية والخارجية. نجمع بين المهارة الحرفية العالية، التكنولوجيا الحديثة، والفهم العميق لاحتياجات العصر، لنقدم لك جودة لا تضاهى، عزلاً حرارياً وصوتياً فائقاً، ومتانة تعيش لأجيال.</span>
+            <span class="en"><strong>Abdullah Saleh Bin Umair Design,</strong> your trusted expert in aluminum and glass in Riyadh. We have years of extensive experience providing comprehensive engineering solutions for facades and finishes. We combine high craftsmanship, modern tech, and a deep understanding of modern needs to deliver unparalleled quality.</span>
         </div>
     </section>
 
     <section id="services">
-        <h2 class="section-title"><span class="ar">خدماتنا</span><span class="en">Our Services</span></h2>
+        <h2 class="section-title reveal"><span class="ar">خدماتنا</span><span class="en">Our Services</span></h2>
         <div class="grid-container">
-            <div class="service-card" onclick="this.classList.toggle('active')">
-                <i class="fas fa-box-open"></i>
-                <h3><span class="ar">تفصيل خزائن</span><span class="en">Custom Cabinets</span></h3>
-                <p><span class="ar">تصميم وتنفيذ خزائن عملية وأنيقة تناسب كافة المساحات والاحتياجات بأجود أنواع الأخشاب والإكسسوارات.</span><span class="en">Design and execution of practical and elegant custom cabinets to suit all spaces and needs with the highest quality wood.</span></p>
+            <div class="service-card reveal" onclick="this.classList.toggle('active')">
+                <div class="icon-3d-wrapper"><i class="fas fa-building"></i></div>
+                <h3><span class="ar">واجهات استراكشر زجاجية</span><span class="en">Structural Glass Facades</span></h3>
+                <p><span class="ar">تصميم وتركيب واجهات زجاجية للفلل والمباني التجارية بنظام الاستراكشر والكيرتن وول، تمنح المبنى إطلالة بانورامية وعزلاً ممتازاً.</span><span class="en">Design and installation of glass facades for villas and commercial buildings, providing panoramic views and excellent insulation.</span></p>
             </div>
-            <div class="service-card" onclick="this.classList.toggle('active')">
-                <i class="fas fa-door-closed"></i>
-                <h3><span class="ar">تصميم وتفصيل دواليب</span><span class="en">Custom Wardrobes</span></h3>
-                <p><span class="ar">دواليب ملابس عصرية ومبتكرة بتصميمات تستغل المساحات بذكاء، مع تقسيمات داخلية تلبي احتياجك اليومي.</span><span class="en">Modern and innovative wardrobes designed to use space smartly, with internal divisions that meet your daily needs.</span></p>
+            <div class="service-card reveal" onclick="this.classList.toggle('active')">
+                <div class="icon-3d-wrapper"><i class="fas fa-door-open"></i></div>
+                <h3><span class="ar">أبواب ونوافذ ألمنيوم</span><span class="en">Aluminum Doors & Windows</span></h3>
+                <p><span class="ar">تفصيل وتركيب أحدث قطاعات الألمنيوم للأبواب والنوافذ (سحاب، مفصلي، قلاب) بقطاعات عازلة للصوت والحرارة والأتربة.</span><span class="en">Customizing and installing the latest aluminum profiles for doors and windows with sound, heat, and dust insulation.</span></p>
             </div>
-            <div class="service-card" onclick="this.classList.toggle('active')">
-                <i class="fas fa-boxes"></i>
-                <h3><span class="ar">تصميم وتفصيل غرف تخزين</span><span class="en">Storage Rooms</span></h3>
-                <p><span class="ar">حلول تخزين مبتكرة وغرف مخصصة لترتيب مقتنياتك بشكل منظم وعصري يسهل عليك الوصول إليها.</span><span class="en">Innovative storage solutions and custom rooms to organize your belongings in an orderly and modern way.</span></p>
+            <div class="service-card reveal" onclick="this.classList.toggle('active')">
+                <div class="icon-3d-wrapper"><i class="fas fa-shower"></i></div>
+                <h3><span class="ar">كبائن شاور زجاجية</span><span class="en">Glass Shower Cabins</span></h3>
+                <p><span class="ar">تصميم كبائن شاور من الزجاج السيكوريت المقاوم للكسر، بإكسسوارات مقاومة للصدأ، لتضفي لمسة من الفخامة والاتساع لحمامك.</span><span class="en">Designing shower cabins from tempered glass with rust-resistant accessories, adding luxury and spaciousness to your bathroom.</span></p>
             </div>
-            <div class="service-card" onclick="this.classList.toggle('active')">
-                <i class="fas fa-bed"></i>
-                <h3><span class="ar">تصميم وتفصيل غرف نوم</span><span class="en">Custom Bedrooms</span></h3>
-                <p><span class="ar">غرف نوم رئيسية تعكس الفخامة والراحة بتفاصيل خشبية متقنة ومصممة خصيصاً لتناسب ذوقك الرفيع.</span><span class="en">Master bedrooms that reflect luxury and comfort with exquisite wooden details, tailored to your refined taste.</span></p>
+            <div class="service-card reveal" onclick="this.classList.toggle('active')">
+                <div class="icon-3d-wrapper"><i class="fas fa-grip-lines"></i></div>
+                <h3><span class="ar">درابزين زجاج وألمنيوم</span><span class="en">Glass & Aluminum Handrails</span></h3>
+                <p><span class="ar">تركيب درابزين السلالم والبلكونات بتصاميم مودرن تدمج بين الزجاج النقي والألمنيوم المتين لتوفير حماية وأناقة لا مثيل لها.</span><span class="en">Installing handrails for stairs and balconies with modern designs combining pure glass and durable aluminum for safety and elegance.</span></p>
             </div>
-            <div class="service-card" onclick="this.classList.toggle('active')">
-                <i class="fas fa-child"></i>
-                <h3><span class="ar">تفصيل وتصميم غرف اطفال</span><span class="en">Kids Rooms</span></h3>
-                <p><span class="ar">غرف أطفال آمنة ومبهجة بألوان وتصميمات تلهم خيال طفلك وتوفر له بيئة مثالية للعب والدراسة.</span><span class="en">Safe and joyful kids' rooms with colors and designs that inspire your child's imagination.</span></p>
+            <div class="service-card reveal" onclick="this.classList.toggle('active')">
+                <div class="icon-3d-wrapper"><i class="fas fa-utensils"></i></div>
+                <h3><span class="ar">مطابخ ألمنيوم عصرية</span><span class="en">Modern Aluminum Kitchens</span></h3>
+                <p><span class="ar">تفصيل مطابخ ألمنيوم بألوان وتصاميم تواكب أحدث الصيحات، تتميز بمقاومتها للماء والحشرات وسهولة تنظيفها وعمرها الطويل.</span><span class="en">Customizing aluminum kitchens with modern colors and designs, characterized by water resistance and long lifespan.</span></p>
             </div>
-            <div class="service-card" onclick="this.classList.toggle('active')">
-                <i class="fas fa-couch"></i>
-                <h3><span class="ar">تفصيل موبيليا</span><span class="en">Custom Furniture</span></h3>
-                <p><span class="ar">صناعة كافة أنواع الموبيليا وقطع الأثاث الفريدة التي تضفي طابعاً مميزاً لمنزلك بدقة وحرفية عالية.</span><span class="en">Manufacturing all kinds of unique furniture pieces that add a distinct character to your home with high precision.</span></p>
-            </div>
-            <div class="service-card" onclick="this.classList.toggle('active')">
-                <i class="fas fa-layer-group"></i>
-                <h3><span class="ar">تفصيل ديكورات جدارية</span><span class="en">Wall Decors</span></h3>
-                <p><span class="ar">تكسيات خشبية وديكورات جدارية راقية تزيد من فخامة وجماليات المكان وتضفي دفئاً على مساحتك.</span><span class="en">Luxurious wooden cladding and wall decors that increase the elegance and add warmth to your space.</span></p>
-            </div>
-            <div class="service-card" onclick="this.classList.toggle('active')">
-                <i class="fas fa-tv"></i>
-                <h3><span class="ar">تفصيل ديكور شاشات</span><span class="en">TV Decors</span></h3>
-                <p><span class="ar">مكتبات تلفزيون وديكورات شاشات مودرن وكلاسيك مصممة خصيصاً لتناسب صالتك وتخفي الأسلاك بذكاء.</span><span class="en">Modern and classic TV cabinets and decors specially designed to fit your living room and cleverly hide wires.</span></p>
-            </div>
-            <div class="service-card" onclick="this.classList.toggle('active')">
+            <div class="service-card reveal" onclick="this.classList.toggle('active')">
                 <i class="fas fa-tools"></i>
-                <h3><span class="ar">صيانة النجارة والديكور الخشبي</span><span class="en">Carpentry Maintenance</span></h3>
-                <p><span class="ar">خدمات صيانة وتجديد شاملة لكافة الأعمال الخشبية والموبيليا لتعود كالجديدة تماماً مع معالجة الخدوش.</span><span class="en">Comprehensive maintenance and renewal services for all woodwork and furniture to return them as good as new.</span></p>
+                <div class="icon-3d-wrapper"><i class="fas fa-tools"></i></div>
+                <h3><span class="ar">صيانة الألمنيوم والزجاج</span><span class="en">Maintenance Services</span></h3>
+                <p><span class="ar">خدمات صيانة وتغيير كفرات النوافذ، إصلاح الأقفال، وتغيير الزجاج المكسور بسرعة واحترافية لتعود كالجديدة.</span><span class="en">Maintenance services, replacing window rollers, fixing locks, and replacing broken glass quickly and professionally.</span></p>
             </div>
         </div>
     </section>
 
-    <section id="why-us" style="background-color: #1f140e;">
-        <h2 class="section-title"><span class="ar">لماذا تختار مؤسسة عبدالله صالح ؟</span><span class="en">Why Choose Abdullah Saleh?</span></h2>
+    <section id="why-us" style="background-color: #080d14;">
+        <h2 class="section-title reveal"><span class="ar">لماذا نحن خيارك الأول؟</span><span class="en">Why Choose Us?</span></h2>
         <div class="grid-container">
-            <div class="feature-card">
-                <i class="fas fa-medal"></i>
-                <h3><span class="ar">دقة في العمل وجودة في التنفيذ</span><span class="en">Precision & Quality</span></h3>
-                <p><span class="ar">نعتمد على أجود أنواع الأخشاب وخبرة واسعة لنضمن لك تشطيبات خشبية خالية من العيوب.</span><span class="en">We rely on the finest woods and extensive experience to ensure flawless wooden finishes.</span></p>
+            <div class="feature-card reveal">
+                <div class="icon-3d-wrapper"><i class="fas fa-shield-alt"></i></div>
+                <h3><span class="ar">جودة وعزل فائق</span><span class="en">Quality & Insulation</span></h3>
+                <p><span class="ar">نستخدم قطاعات ألمنيوم معتمدة وزجاج دبل جلاس لضمان أفضل عزل للصوت والحرارة والماء، لبيئة داخلية هادئة.</span><span class="en">We use certified aluminum profiles and double glass for the best sound, heat, and water insulation.</span></p>
             </div>
-            <div class="feature-card">
-                <i class="fas fa-clock"></i>
+            <div class="feature-card reveal">
+                <div class="icon-3d-wrapper"><i class="fas fa-clock"></i></div>
                 <h3><span class="ar">التزام بمواعيد التسليم</span><span class="en">On-Time Delivery</span></h3>
-                <p><span class="ar">نقدر وقتك ونلتزم بتسليم الأعمال في الوقت المتفق عليه تماماً دون أي تأخير.</span><span class="en">We value your time and strictly deliver projects on schedule without delays.</span></p>
+                <p><span class="ar">نقدر وقتك وأهمية مشاريعك، لذا نلتزم بتسليم وتركيب الأعمال في الوقت المتفق عليه تماماً دون أي تأخير.</span><span class="en">We value your time and strictly deliver and install projects on schedule without delays.</span></p>
             </div>
-            <div class="feature-card">
-                <i class="fas fa-tags"></i>
-                <h3><span class="ar">اسعار تنافسية</span><span class="en">Competitive Prices</span></h3>
-                <p><span class="ar">معادلة ذهبية تجمع بين أعلى معايير الجودة والأسعار المدروسة التي تناسب ميزانيتك.</span><span class="en">A golden equation combining top quality standards with affordable pricing.</span></p>
+            <div class="feature-card reveal">
+                <div class="icon-3d-wrapper"><i class="fas fa-tags"></i></div>
+                <h3><span class="ar">أسعار تنافسية ومدروسة</span><span class="en">Competitive Prices</span></h3>
+                <p><span class="ar">معادلة ذهبية نقدمها لك تجمع بين أعلى معايير جودة المواد والفخامة مع الأسعار التي تناسب ميزانيتك.</span><span class="en">A golden equation combining top quality material standards with affordable pricing.</span></p>
             </div>
-            <div class="feature-card">
-                <i class="fas fa-shield-alt"></i>
-                <h3><span class="ar">ضمان ما بعد التنفيذ</span><span class="en">Post-Work Guarantee</span></h3>
-                <p><span class="ar">نقدم لك ضماناً حقيقياً لراحتك، ونتواجد لخدمتك وصيانة أعمالك حتى بعد انتهاء التسليم.</span><span class="en">We provide a real warranty and remain at your service even after project completion.</span></p>
+            <div class="feature-card reveal">
+                <div class="icon-3d-wrapper"><i class="fas fa-check-circle"></i></div>
+                <h3><span class="ar">ضمان حقيقي وتوطين</span><span class="en">Real Guarantee</span></h3>
+                <p><span class="ar">نقدم لك ضماناً حقيقياً على القطاعات والإكسسوارات، ونتواجد لخدمتك وصيانة أعمالك حتى بعد انتهاء التركيب.</span><span class="en">We provide a real warranty on profiles and accessories, remaining at your service even after installation.</span></p>
             </div>
         </div>
     </section>
 
     <section id="contact">
-        <h2 class="section-title"><span class="ar">تواصل معنا</span><span class="en">Contact Us</span></h2>
-        <div class="contact-info">
-            <p><i class="fas fa-map-marker-alt"></i> <span class="ar">العنوان: </span><span class="en">Address: </span><span style="color:var(--text-light);">8315 عبادة بن الصامت، الروضة، الرياض 13211</span></p>
-            <p><i class="fas fa-phone"></i> <span class="ar">رقم التواصل: </span><span class="en">Phone: </span><a href="tel:0570459837" style="color:var(--text-light); text-decoration:none; direction:ltr; display:inline-block;">0570459837</a></p>
-            <p><i class="fas fa-envelope"></i> <span class="ar">البريد الإلكتروني: </span><span class="en">Email: </span><a href="mailto:info@abdallahsalehcp.com" style="color:var(--text-light); text-decoration:none;">info@abdallahsalehcp.com</a></p>
+        <h2 class="section-title reveal"><span class="ar">تواصل معنا</span><span class="en">Contact Us</span></h2>
+        <div class="contact-info reveal">
+            <p><i class="fas fa-map-marker-alt"></i> <span class="ar">العنوان: </span><span class="en">Address: </span><span style="color:var(--silver-light);">8315 عبادة بن الصامت، الروضة، الرياض 13211</span></p>
+            <p><i class="fas fa-phone"></i> <span class="ar">رقم التواصل: </span><span class="en">Phone: </span><a href="tel:0570459837" style="direction:ltr; display:inline-block;">0570459837</a></p>
+            <p><i class="fas fa-envelope"></i> <span class="ar">البريد الإلكتروني: </span><span class="en">Email: </span><a href="mailto:info@abdallahsalehdesign.com">info@abdallahsalehdesign.com</a></p>
         </div>
         
-        <div class="map-container">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7724.06908091356!2d46.77676641114501!3d24.73532950000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e2f01523dec2047%3A0xa30b6e89c3fcc373!2z2YXYpNiz2LPYqSDYudio2K_Yp9mE2YTZhyDYtdin2YTYrQ!5e1!3m2!1sar!2ssa!4v1773186174075!5m2!1sar!2ssa" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            <div class="map-overlay-wrapper">
-                <i class="fas fa-map-marker-alt map-pin-icon"></i>
-                <div class="map-overlay">
-                    <span class="ar">نقدم خدماتنا في جميع أنحاء الرياض</span>
-                    <span class="en">Serving all areas of Riyadh</span>
+        <div class="map-container reveal">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7724.06908091356!2d46.77676641114501!3d24.73532950000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e2f01523dec2047%3A0xa30b6e89c3fcc373!2z2YXYpNiz2LPYqSDYudio2K_Yp9mE2YTZhyDYtdin2YTYrQ!5e1!3m2!1sar!2ssa!4v1773186174075!5m2!1sar!2ssa" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            
+            <div class="map-pin-center">
+                <div class="map-tooltip">
+                    <span class="ar">مؤسسة عبدالله صالح للتصميم (ألمنيوم وزجاج)</span>
+                    <span class="en">Abdullah Saleh Design (Aluminum & Glass)</span>
                 </div>
+                <i class="fas fa-map-marker-alt map-pin-icon"></i>
             </div>
         </div>
     </section>
@@ -442,11 +487,11 @@
         </a>
         <a href="#services">
             <i class="fas fa-tools"></i>
-            <span class="nav-text"><span class="ar">خدماتنا</span><span class="en">Services</span></span>
+            <span class="nav-text"><span class="ar">الخدمات</span><span class="en">Services</span></span>
         </a>
         <a href="#why-us">
             <i class="fas fa-star"></i>
-            <span class="nav-text"><span class="ar">لماذا نحن</span><span class="en">Why Us</span></span>
+            <span class="nav-text"><span class="ar">المزايا</span><span class="en">Features</span></span>
         </a>
         <a href="#contact">
             <i class="fas fa-phone-alt"></i>
@@ -457,8 +502,8 @@
     <footer>
         <div class="copyright">
             <i class="fas fa-copyright"></i>
-            <span class="ar">جميع الحقوق محفوظة لدى : مؤسسة عبدالله صالح للنجارة 2026</span>
-            <span class="en">All rights reserved to Abdullah Saleh Carpentry 2026</span>
+            <span class="ar">جميع الحقوق محفوظة لدى : مؤسسة عبدالله صالح بن عمير للتصميم 2026</span>
+            <span class="en">All rights reserved to Abdullah Saleh Design 2026</span>
         </div>
         
         <a href="https://wa.me/966547194788" target="_blank" class="designer-badge" rel="noopener noreferrer">
@@ -468,6 +513,7 @@
     </footer>
 
     <script>
+        // إعدادات شاشة التحميل (2.5 ثانية)
         document.addEventListener("DOMContentLoaded", () => {
             setTimeout(() => {
                 const loader = document.getElementById('loader');
@@ -477,11 +523,13 @@
             }, 2500); 
         });
 
+        // القائمة الجانبية
         function toggleMenu() {
             const sideMenu = document.getElementById('sideMenu');
             sideMenu.classList.toggle('active');
         }
 
+        // نظام اللغتين
         const langBtn = document.getElementById('langToggleBtn');
         let currentLang = 'ar';
 
@@ -506,6 +554,22 @@
                 setLanguage(browserLang.toLowerCase().startsWith('ar') ? 'ar' : 'en');
             }
         });
+
+        // كود الأنيميشن عند السكرول
+        function revealOnScroll() {
+            const reveals = document.querySelectorAll('.reveal');
+            const windowHeight = window.innerHeight;
+            const elementVisible = 100;
+
+            reveals.forEach((reveal) => {
+                const elementTop = reveal.getBoundingClientRect().top;
+                if (elementTop < windowHeight - elementVisible) {
+                    reveal.classList.add('active');
+                }
+            });
+        }
+        window.addEventListener('scroll', revealOnScroll);
+        setTimeout(revealOnScroll, 2600); 
     </script>
 </body>
 </html>
